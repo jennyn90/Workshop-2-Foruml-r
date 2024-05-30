@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <form action="https://httpbin.org/anything" method="post"></form>
+    <div class="container">
+      <h2>Logga In</h2>
+      <form action="/submit" method="post">
+
+        <label for="textbox2">För och Efternamn</label>
+        <input
+          type="text"
+          id="textbox1"
+          name="textbox1"
+          required
+          aria-required="true"
+        />
+
+        <label for="textbox2">E-postadress</label>
+        <input
+          type="text"
+          id="textbox2"
+          name="textbox2"
+          required
+          aria-required="true"
+        />
+
+        <label for="password">Lösenord</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+          aria-required="true"
+        />
+
+        <label>
+          <input type="checkbox" id="checkbox" name="checkbox" />
+          kom ihåg mig
+        </label>
+
+        <input type="submit" value="Logga in" />
+      </form>
+    </div>
+  </body>
+</html>
